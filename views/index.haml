@@ -1,0 +1,40 @@
+%fieldset
+	%label Area
+	%form{:action => "/area"}
+		%table
+			%tr
+				%th
+					%label{:for => "lat"} LAT
+				%td
+					%input#lat{:name => "lat"}
+			%tr
+				%th
+					%label{:for => "lng"} LNG
+				%td
+					%input#lng{:name => "lng"}
+			%tr
+				%td{:colspan => 2}
+					%button QUERY
+%fieldset
+	%label Restaurants
+	%form{:action => "/restaurants"}
+		%table
+			%tr
+				%th
+					%label{:for => "lat"} LAT
+				%td
+					%input#lat{:name => "lat"}
+			%tr
+				%th
+					%label{:for => "lng"} LNG
+				%td
+					%input#lng{:name => "lng"}
+			%tr
+				%th
+					%label{:for => "distance"} Distance
+				%td
+					%input#distance{:name => "distance"}
+			%tr
+				%td{:colspan => 2}
+					%button QUERY
+	
